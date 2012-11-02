@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" filepath="$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" filepath="$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ISITravel.Repository.Contract/ISITravel.Repository.Contract.iml" filepath="$PROJECT_DIR$/ISITravel.Repository.Contract/ISITravel.Repository.Contract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ISITravel.Repository.Tests/ISITravel.Repository.Tests.iml" filepath="$PROJECT_DIR$/ISITravel.Repository.Tests/ISITravel.Repository.Tests.iml" />
+    </modules>
+  </component>
+</project>
+
