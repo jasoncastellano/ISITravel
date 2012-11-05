@@ -10,7 +10,7 @@
     <orderEntry type="library" name="junit-4.10" level="project" />
     <orderEntry type="module" module-name="ISITravel.Repository" />
     <orderEntry type="module" module-name="ISITravel.Repository.Contract" />
-    <orderEntry type="library" name="pojava-2.7.0" level="application" />
+    <orderEntry type="library" name="pojava-2.7.0" level="project" />
   </component>
 </module>
 

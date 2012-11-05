@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="855e50af-35ca-4e2c-a2a7-404019ab5d70" name="Default" comment="" />
+    <list default="true" id="855e50af-35ca-4e2c-a2a7-404019ab5d70" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/pojava_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" afterPath="$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Contract/ISITravel.Repository.Contract.iml" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/ISITravel.Repository.Contract.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Tests/ISITravel.Repository.Tests.iml" afterPath="$PROJECT_DIR$/ISITravel.Repository.Tests/ISITravel.Repository.Tests.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" afterPath="$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" />
+    </list>
     <ignored path="ISITravel.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,13 +79,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Travel.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Travel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="470" selection-end="470" vertical-scroll-proportion="0.47675803">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="5" column="40" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Car.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="43" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hotel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="18" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Airport.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="29" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flight.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="44" selection-start="613" selection-end="613" vertical-scroll-proportion="0.7681992">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,15 +138,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Employee.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java" />
         <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="840" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -109,7 +157,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -128,12 +176,36 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Problems">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ISITravel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -206,36 +278,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems">
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -255,8 +303,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -383,11 +431,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="0" y="0" width="840" height="1010" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -397,16 +445,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954017" sideWeight="0.6709007" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23483871" sideWeight="0.67176473" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -448,7 +496,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Domain objects: Airport, Car, Hotel, Flight" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -462,6 +510,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Initial commit" />
+    <MESSAGE value="Added Domain objects: Airport, Car, Hotel, Flight" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -481,12 +530,38 @@
         <state line="28" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="43" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="470" selection-end="470" vertical-scroll-proportion="0.47675803">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="5" column="40" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="29" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="44" selection-start="613" selection-end="613" vertical-scroll-proportion="0.7681992">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -519,7 +594,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>odata4j-0.7.0-clientbundle</last-edited>
+          <last-edited>Android 2.2 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -543,7 +618,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ISITravel.Domain</last-edited>
+          <last-edited>ISITravel.Repository</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -567,7 +642,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>odata4j-0.7.0-clientbundle</last-edited>
+          <last-edited>pojava-2.7.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

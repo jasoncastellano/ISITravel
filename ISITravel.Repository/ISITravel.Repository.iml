@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="pojava-2.7.0" level="application" />
-    <orderEntry type="library" name="odata4j-0.7.0-clientbundle" level="application" />
+    <orderEntry type="library" name="pojava-2.7.0" level="project" />
+    <orderEntry type="library" name="odata4j-0.7.0-clientbundle" level="project" />
   </component>
 </module>
 
