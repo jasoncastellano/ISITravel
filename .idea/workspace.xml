@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="855e50af-35ca-4e2c-a2a7-404019ab5d70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/pojava_2_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" afterPath="$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Contract/ISITravel.Repository.Contract.iml" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/ISITravel.Repository.Contract.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Tests/ISITravel.Repository.Tests.iml" afterPath="$PROJECT_DIR$/ISITravel.Repository.Tests/ISITravel.Repository.Tests.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" afterPath="$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" />
     </list>
     <ignored path="ISITravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -427,7 +417,11 @@
       <created>1351885140564</created>
       <updated>1351885140564</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Domain objects: Airport, Car, Hotel, Flight">
+      <created>1352086253173</created>
+      <updated>1352086253173</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
