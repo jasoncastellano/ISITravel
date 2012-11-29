@@ -10,6 +10,7 @@
     <orderEntry type="library" name="pojava-2.7.0" level="project" />
     <orderEntry type="library" name="odata4j-0.7.0-clientbundle" level="project" />
     <orderEntry type="module" module-name="ISITravel.Domain" />
+    <orderEntry type="module" module-name="ISITravel.Repository.Contract" />
   </component>
 </module>
 
