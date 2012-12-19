@@ -22,9 +22,8 @@ public class AirportRepositoryTest {
         Flight flight = new Flight();
         Airport toAirport = new Airport();
         Airport fromAirport = new Airport();
-        //TODO Update with valid AirportIds
-        toAirport.setAirportId(0);
-        fromAirport.setAirportId(0);
+        toAirport.setAirportId(34);
+        fromAirport.setAirportId(34);
         flight.setToAirport(toAirport);
         flight.setFromAirport(fromAirport);
         List<Airport> result = mTarget.getByFlight(flight);
@@ -34,8 +33,7 @@ public class AirportRepositoryTest {
 
     @Test
     public void testGetByAirportId() throws Exception {
-        //TODO: Update with valid AirportId
-        Airport result = mTarget.getByAirportId(0);
+        Airport result = mTarget.getByAirportId(34);
         Assert.assertNotNull(result);
     }
 }

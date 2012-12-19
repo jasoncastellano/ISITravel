@@ -25,11 +25,15 @@ public class TravelRepository implements ITravelRepository {
         mTravelEntityConverter = new TravelEntityConverter(new HotelEntityConverter(), new FlightEntityConverter(), new CarEntityConverter(), new EmployeeEntityConverter(), new EntityCollectionConverter());
     }
 
-    public List<Travel> getAll() {
+    public List<Travel> getAll(int limit) {
         List<Travel> travelList = new ArrayList<Travel>();
         try {
             ODataConsumer consumer = mODataHelper.getIsiTravelConsumer();
-            List<OEntity> travels = consumer.getEntities("Travels").expand(mFullExpandPredicate).execute().toList();
+            List<OEntity> travels;
+
+            travels = limit > 0 ?
+                consumer.getEntities("Travels").expand(mFullExpandPredicate).top(limit).execute().toList() :
+                consumer.getEntities("Travels").expand(mFullExpandPredicate).execute().toList();
 
             for (OEntity travel : travels) {
                 travelList.add((Travel) mTravelEntityConverter.ConvertEntityToDomainObject(travel));

@@ -14,7 +14,7 @@ public class AirlineRepositoryTest {
     @Test
     public void testGetByAirlineId() throws Exception {
         //TODO: Update with valid AirlineId
-        Airline result = mTarget.getByAirlineId(0);
+        Airline result = mTarget.getByAirlineId(11);
         Assert.assertNotNull(result);
     }
 

@@ -13,7 +13,7 @@ public class TravelRepositoryTest {
     private TravelRepository mTarget = new TravelRepository(new ODataHelper());
     @Test
     public void testGetAll() throws Exception {
-        List<Travel> travels = mTarget.getAll();
+        List<Travel> travels = mTarget.getAll(1);
 
         System.out.println(travels.size());
     }

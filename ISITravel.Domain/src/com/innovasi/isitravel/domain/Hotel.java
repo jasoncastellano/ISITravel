@@ -2,19 +2,15 @@ package com.innovasi.isitravel.domain;
 
 import org.joda.time.LocalDateTime;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Jason
- * Date: 11/4/12
- * Time: 9:57 PM
- * To change this template use File | Settings | File Templates.
- */
+import java.math.BigDecimal;
+
+
 public class Hotel implements IDomainObject{
     private String mName;
     private String mAddress;
     private String mPhone;
-    private double mDailyRate;
-    private double mDailyTax;
+    private BigDecimal mDailyRate;
+    private BigDecimal mDailyTax;
     private LocalDateTime mCheckInDateTime;
     private LocalDateTime mCheckOutDateTime;
     private String mComments;
@@ -45,19 +41,19 @@ public class Hotel implements IDomainObject{
         mPhone = phone;
     }
 
-    public double getDailyRate() {
+    public BigDecimal getDailyRate() {
         return mDailyRate;
     }
 
-    public void setDailyRate(double dailyRate) {
+    public void setDailyRate(BigDecimal dailyRate) {
         mDailyRate = dailyRate;
     }
 
-    public double getDailyTax() {
+    public BigDecimal getDailyTax() {
         return mDailyTax;
     }
 
-    public void setDailyTax(double dailyTax) {
+    public void setDailyTax(BigDecimal dailyTax) {
         mDailyTax = dailyTax;
     }
 
