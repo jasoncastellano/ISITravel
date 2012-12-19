@@ -11,6 +11,15 @@
     <orderEntry type="library" name="odata4j-0.7.0-clientbundle" level="project" />
     <orderEntry type="module" module-name="ISITravel.Domain" />
     <orderEntry type="module" module-name="ISITravel.Repository.Contract" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
 

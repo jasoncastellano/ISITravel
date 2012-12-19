@@ -2,30 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="855e50af-35ca-4e2c-a2a7-404019ab5d70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirportRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/CarRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/EmployeeRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/FlightRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/HotelRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IODataHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/ODataHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/TravelRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airline.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/AirlineEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirlineRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/AirportEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/CarEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/CarRepositoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/EmployeeEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/EmployeeRepositoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/FlightEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/FlightRepositoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/HotelEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IAirlineRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/IDomainObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/TravelEntityConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/TravelRepositoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirportRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirportRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/CarRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/CarRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Employee.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Employee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/EmployeeRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/EmployeeRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/FlightRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/FlightRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IAirportRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IAirportRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IFlightRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IFlightRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IODataHelper.java" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IODataHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" afterPath="$PROJECT_DIR$/ISITravel.Domain/ISITravel.Domain.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" afterPath="$PROJECT_DIR$/ISITravel.Repository/ISITravel.Repository.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/ITravelRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/ITravelRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/ODataHelper.java" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/ODataHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" afterPath="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/TravelRepository.java" afterPath="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/TravelRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ISITravel.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354181389500" ignored="false" />
+    <file path="/Dummy.txt" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355249180059" ignored="false" />
     <file path="/IEmployeeRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1353870679827" ignored="false" />
-    <file path="/ITravelRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1353871095670" ignored="false" />
-    <file path="/AirportRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354182239744" ignored="false" />
-    <file path="/CarRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354182260882" ignored="false" />
-    <file path="/EmployeeRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354182358364" ignored="false" />
-    <file path="/FlightRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354182405604" ignored="false" />
+    <file path="/ITravelRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355872769279" ignored="false" />
+    <file path="/AirportRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355861978444" ignored="false" />
+    <file path="/CarRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355857687220" ignored="false" />
+    <file path="/EmployeeRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355855374690" ignored="false" />
+    <file path="/FlightRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355869567331" ignored="false" />
     <file path="/HotelRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354182425326" ignored="false" />
-    <file path="/TravelRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354185511273" ignored="false" />
-    <file path="/IODataHelper.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354183907096" ignored="false" />
-    <file path="/ODataHelper.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1354183942238" ignored="false" />
+    <file path="/TravelRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355873513284" ignored="false" />
+    <file path="/IODataHelper.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355607210019" ignored="false" />
+    <file path="/ODataHelper.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355607366632" ignored="false" />
+    <file path="/fragment.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355864896916" ignored="false" />
+    <file path="/TravelRepositoryTest.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355853755779" ignored="false" />
+    <file path="/ITravelConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355851044962" ignored="false" />
+    <file path="/Airport.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355860551046" ignored="false" />
+    <file path="/TravelEntityConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355873700563" ignored="false" />
+    <file path="/Travel.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355855799698" ignored="false" />
+    <file path="/EmployeeEntityConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355854814370" ignored="false" />
+    <file path="/EmployeeRepositoryTest.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355855513019" ignored="false" />
+    <file path="/FlightEntityConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355870564331" ignored="false" />
+    <file path="/Flight.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355870468059" ignored="false" />
+    <file path="/HotelEntityConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355856455418" ignored="false" />
+    <file path="/Hotel.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355856261380" ignored="false" />
+    <file path="/Car.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355859542279" ignored="false" />
+    <file path="/a.dummy" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355856614418" ignored="false" />
+    <file path="/CarEntityConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355875024362" ignored="false" />
+    <file path="/AirportEntityConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355860581870" ignored="false" />
+    <file path="/CarRepositoryTest.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355859720318" ignored="false" />
+    <file path="/FlightRepositoryTest.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355871785331" ignored="false" />
+    <file path="/IAirportRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355861841946" ignored="false" />
+    <file path="/IFlightRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355861646989" ignored="false" />
+    <file path="/Airline.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355870105062" ignored="false" />
+    <file path="/AirlineEntityConverter.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355870333851" ignored="false" />
+    <file path="/IAirlineRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355870406212" ignored="false" />
+    <file path="/AirlineRepository.java" changelist="855e50af-35ca-4e2c-a2a7-404019ab5d70" time="1355870426048" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +82,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ISITravel$FlightRepositoryTest_testGetByTravelId.coverage" NAME="FlightRepositoryTest.testGetByTravelId Coverage Results" MODIFIED="1355864539870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.innovasi.isitravel.repository.tests.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -41,7 +95,6 @@
   </component>
   <component name="DebuggerManager">
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -76,6 +129,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/CarEntityConverter.java" line="16" class="com.innovasi.isitravel.repository.converters.CarEntityConverter" package="com.innovasi.isitravel.repository.converters">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -85,37 +155,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../My Dropbox/IdeaProjects/ODataGen/src/Main.java">
+      <file leaf-file-name="FlightRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/FlightRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="391" selection-end="1015" vertical-scroll-proportion="0.0">
+            <state line="29" column="112" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1096#1104#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AirlineEntityConverter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/AirlineEntityConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="53" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Travel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java">
+      <file leaf-file-name="FlightRepositoryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/FlightRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+            <state line="15" column="58" selection-start="522" selection-end="527" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AirportRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirportRepository.java">
+      <file leaf-file-name="TravelRepositoryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/TravelRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="446" selection-end="537" vertical-scroll-proportion="0.0">
+            <state line="20" column="82" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TravelRepository.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TravelRepository.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/TravelRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="67" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38260868">
+            <state line="53" column="98" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1248#1256#0" expanded="true" />
+                <element signature="e#1768#1776#0" expanded="true" />
+                <element signature="e#2371#2379#0" expanded="true" />
+                <element signature="e#2905#2913#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ITravelRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/ITravelRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="31" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelEntityConverter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/TravelEntityConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarEntityConverter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/CarEntityConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="57" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.80818963">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEntityConverter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IEntityConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="113" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Car.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,30 +270,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Hotel.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airport.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IEmployeeRepository.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/ITravelRepository.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IAirportRepository.java" />
         <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirportRepository.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/CarRepository.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/EmployeeRepository.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airline.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IAirlineRepository.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirlineRepository.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/FlightEntityConverter.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/AirlineEntityConverter.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/FlightRepositoryTest.java" />
         <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/FlightRepository.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/HotelRepository.java" />
-        <option value="$PROJECT_DIR$/../../My Dropbox/IdeaProjects/ODataGen/src/Main.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IODataHelper.java" />
-        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/ODataHelper.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/ITravelRepository.java" />
         <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/TravelRepository.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/TravelEntityConverter.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/CarEntityConverter.java" />
+        <option value="$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IEntityConverter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1756" />
+    <option name="height" value="887" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -209,6 +340,50 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,6 +409,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ISITravel.Repository.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel.Repository.Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,6 +488,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel.Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel.Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="converters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISITravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ISITravel.Domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -323,58 +556,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ISITravel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
@@ -382,17 +573,179 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.innovasi.isitravel.repository.tests" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jason\Documents\My Dropbox\IdeaProjects\ISITravel\ISITravel.Repository.Tests\libs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FlightRepositoryTest.testGetByFlightId">
+    <configuration default="false" name="EmployeeRepositoryTest.testGetByEmployeeId" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.innovasi.isitravel.repository.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ISITravel.Repository" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.innovasi.isitravel.repository.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.innovasi.isitravel.repository.tests.EmployeeRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetByEmployeeId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CarRepositoryTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.innovasi.isitravel.repository.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ISITravel.Repository" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.innovasi.isitravel.repository.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.innovasi.isitravel.repository.tests.CarRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CarRepositoryTest.testGetByTravelId" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.innovasi.isitravel.repository.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ISITravel.Repository" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.innovasi.isitravel.repository.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.innovasi.isitravel.repository.tests.CarRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetByTravelId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FlightRepositoryTest.testGetByTravelId" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.innovasi.isitravel.repository.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ISITravel.Repository" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.innovasi.isitravel.repository.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.innovasi.isitravel.repository.tests.FlightRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetByTravelId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FlightRepositoryTest.testGetByFlightId" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.innovasi.isitravel.repository.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ISITravel.Repository" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.innovasi.isitravel.repository.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.innovasi.isitravel.repository.tests.FlightRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetByFlightId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -450,7 +803,22 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.EmployeeRepositoryTest.testGetByEmployeeId" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CarRepositoryTest.testGetAll" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CarRepositoryTest.testGetByTravelId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FlightRepositoryTest.testGetByTravelId" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FlightRepositoryTest.testGetByFlightId" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FlightRepositoryTest.testGetByFlightId" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FlightRepositoryTest.testGetByTravelId" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CarRepositoryTest.testGetByTravelId" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CarRepositoryTest.testGetAll" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EmployeeRepositoryTest.testGetByEmployeeId" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -494,32 +862,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
+    <frame x="-8" y="-8" width="1756" height="887" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30998853" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29807693" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3110368" sideWeight="0.49839914" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3110368" sideWeight="0.49839914" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.67012686" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19461444" sideWeight="0.6900115" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27449822" sideWeight="0.7019231" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3841146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -558,6 +927,8 @@
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Domain objects: Airport, Car, Hotel, Flight" />
@@ -588,114 +959,121 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IAirportRepository.java">
+    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Airline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+        <state line="8" column="31" selection-start="236" selection-end="236" vertical-scroll-proportion="0.27642277">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/ICarRepository.java">
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/AirportEntityConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+        <state line="10" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IEmployeeRepository.java">
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IAirlineRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+        <state line="10" column="34" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IFlightRepository.java">
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirlineRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+        <state line="10" column="54" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IHotelRepository.java">
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/AirlineEntityConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+        <state line="14" column="53" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/FlightEntityConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="41" selection-start="2246" selection-end="2246" vertical-scroll-proportion="0.86382115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="54" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/ITravelRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="61" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+        <state line="9" column="31" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/CarRepository.java">
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/TravelRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="426" selection-end="517" vertical-scroll-proportion="0.0">
+        <state line="20" column="82" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/EmployeeRepository.java">
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/tests/FlightRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="451" selection-end="542" vertical-scroll-proportion="0.0">
+        <state line="15" column="58" selection-start="522" selection-end="527" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/FlightRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/HotelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="436" selection-end="527" vertical-scroll-proportion="0.37869823">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/AirportRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="446" selection-end="537" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/ODataHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="85" selection-start="246" selection-end="246" vertical-scroll-proportion="0.14201184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IODataHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="95" selection-end="206" vertical-scroll-proportion="0.04733728">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../My Dropbox/IdeaProjects/ODataGen/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="391" selection-end="1015" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Travel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="29" column="112" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1096#1104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/TravelRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="67" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38260868">
+        <state line="53" column="98" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1248#1256#0" expanded="true" />
+            <element signature="e#1768#1776#0" expanded="true" />
+            <element signature="e#2371#2379#0" expanded="true" />
+            <element signature="e#2905#2913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/TravelEntityConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Domain/src/com/innovasi/isitravel/domain/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository.Contract/src/com/innovasi/isitravel/repository/contract/IEntityConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="113" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISITravel.Repository/src/com/innovasi/isitravel/repository/converters/CarEntityConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="57" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.80818963">
           <folding />
         </state>
       </provider>
@@ -782,6 +1160,17 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33333334" />
               </list>
             </option>
           </splitter-proportions>

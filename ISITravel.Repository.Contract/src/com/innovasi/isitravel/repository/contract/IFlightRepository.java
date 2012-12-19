@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IFlightRepository {
     public List<Flight> getByTravelId(int travelId);
+    public Flight getByFlightId(int flightId);
 }

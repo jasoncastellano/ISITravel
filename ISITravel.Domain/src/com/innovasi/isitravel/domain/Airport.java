@@ -7,12 +7,21 @@ package com.innovasi.isitravel.domain;
  * Time: 10:04 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Airport {
+public class Airport implements IDomainObject {
     private String mName;
     private String mCity;
     private String mState;
     private String mCountry;
     private String mCode;
+    private int mAirportId;
+
+    public int getAirportId() {
+        return mAirportId;
+    }
+
+    public void setAirportId(int airportId) {
+        mAirportId = airportId;
+    }
 
     public String getName() {
         return mName;

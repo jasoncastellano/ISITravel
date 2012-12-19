@@ -1,8 +1,8 @@
 package com.innovasi.isitravel.domain;
 
-import java.util.List;
+import org.joda.time.LocalDateTime;
 
-import org.pojava.datetime.DateTime;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,17 +11,26 @@ import org.pojava.datetime.DateTime;
  * Time: 3:16 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Travel
+public class Travel implements IDomainObject
 {
+    private int mTravelId;
     private String mDestination;
-    private DateTime mFromDate;
-    private DateTime mToDate;
+    private LocalDateTime mFromDate;
+    private LocalDateTime mToDate;
     private String mDepartFrom;
     private String mPurpose;
     private Employee mEmployee;
     private List<Car> mCars;
     private List<Flight> mFlights;
     private List<Hotel> mHotels;
+
+    public int getTravelId() {
+        return mTravelId;
+    }
+
+    public void setTravelId(int travelId) {
+        mTravelId = travelId;
+    }
 
     public String getDestination() {
         return mDestination;
@@ -31,19 +40,19 @@ public class Travel
         mDestination = destination;
     }
 
-    public DateTime getFromDate() {
+    public LocalDateTime getFromDate() {
         return mFromDate;
     }
 
-    public void setFromDate(DateTime fromDate) {
+    public void setFromDate(LocalDateTime fromDate) {
         mFromDate = fromDate;
     }
 
-    public DateTime getToDate() {
+    public LocalDateTime getToDate() {
         return mToDate;
     }
 
-    public void setToDate(DateTime toDate) {
+    public void setToDate(LocalDateTime toDate) {
         mToDate = toDate;
     }
 

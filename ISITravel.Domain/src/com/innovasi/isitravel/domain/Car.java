@@ -1,26 +1,31 @@
 package com.innovasi.isitravel.domain;
 
-import org.pojava.datetime.DateTime;
+import org.joda.time.LocalDateTime;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Jason
- * Date: 11/4/12
- * Time: 9:45 PM
- * To change this template use File | Settings | File Templates.
- */
-public class Car {
+import java.math.BigDecimal;
+
+public class Car implements IDomainObject{
+
+    private int mTravelId;
     private String mCompany;
     private String mConfirmationNumber;
-    private double mAmount;
+    private BigDecimal mAmount;
     private String mPickupLocation;
-    private DateTime mPickupDateTime;
+    private LocalDateTime mPickupDateTime;
     private String mDropOffLocation;
-    private DateTime mDropOffDateTime;
+    private LocalDateTime mDropOffDateTime;
     private String mFrequentFlierNumber;
     private String mComments;
     private String mCity;
     private String mPhone;
+
+    public int getTravelId() {
+        return mTravelId;
+    }
+
+    public void setTravelId(int travelId) {
+        mTravelId = travelId;
+    }
 
     public String getCompany() {
         return mCompany;
@@ -38,11 +43,11 @@ public class Car {
         mConfirmationNumber = confirmationNumber;
     }
 
-    public double getAmount() {
+    public BigDecimal getAmount() {
         return mAmount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(BigDecimal amount) {
         mAmount = amount;
     }
 
@@ -54,11 +59,11 @@ public class Car {
         mPickupLocation = pickupLocation;
     }
 
-    public DateTime getPickupDateTime() {
+    public LocalDateTime getPickupDateTime() {
         return mPickupDateTime;
     }
 
-    public void setPickupDateTime(DateTime pickupDateTime) {
+    public void setPickupDateTime(LocalDateTime pickupDateTime) {
         mPickupDateTime = pickupDateTime;
     }
 
@@ -70,11 +75,11 @@ public class Car {
         mDropOffLocation = dropOffLocation;
     }
 
-    public DateTime getDropOffDateTime() {
+    public LocalDateTime getDropOffDateTime() {
         return mDropOffDateTime;
     }
 
-    public void setDropOffDateTime(DateTime dropOffDateTime) {
+    public void setDropOffDateTime(LocalDateTime dropOffDateTime) {
         mDropOffDateTime = dropOffDateTime;
     }
 

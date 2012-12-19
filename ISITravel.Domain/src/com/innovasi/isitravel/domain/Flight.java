@@ -1,6 +1,6 @@
 package com.innovasi.isitravel.domain;
 
-import org.pojava.datetime.DateTime;
+import org.joda.time.LocalDateTime;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,30 +9,30 @@ import org.pojava.datetime.DateTime;
  * Time: 10:20 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Flight {
-    private DateTime mDepartureDateTime;
-    private DateTime mArrivalDateTime;
+public class Flight implements IDomainObject{
+    private LocalDateTime mDepartureDateTime;
+    private LocalDateTime mArrivalDateTime;
     private String mDepartureLocation;
     private String mArrivalLocation;
-    private String mAirline;
+    private Airline mAirline;
     private String mFlightNumber;
     private String mSeatComment;
-    private String FromAirport;
-    private String ToAirport;
+    private Airport FromAirport;
+    private Airport ToAirport;
 
-    public DateTime getDepartureDateTime() {
+    public LocalDateTime getDepartureDateTime() {
         return mDepartureDateTime;
     }
 
-    public void setDepartureDateTime(DateTime departureDateTime) {
+    public void setDepartureDateTime(LocalDateTime departureDateTime) {
         mDepartureDateTime = departureDateTime;
     }
 
-    public DateTime getArrivalDateTime() {
+    public LocalDateTime getArrivalDateTime() {
         return mArrivalDateTime;
     }
 
-    public void setArrivalDateTime(DateTime arrivalDateTime) {
+    public void setArrivalDateTime(LocalDateTime arrivalDateTime) {
         mArrivalDateTime = arrivalDateTime;
     }
 
@@ -52,11 +52,11 @@ public class Flight {
         mArrivalLocation = arrivalLocation;
     }
 
-    public String getAirline() {
+    public Airline getAirline() {
         return mAirline;
     }
 
-    public void setAirline(String airline) {
+    public void setAirline(Airline airline) {
         mAirline = airline;
     }
 
@@ -76,19 +76,19 @@ public class Flight {
         mSeatComment = seatComment;
     }
 
-    public String getFromAirport() {
+    public Airport getFromAirport() {
         return FromAirport;
     }
 
-    public void setFromAirport(String fromAirport) {
+    public void setFromAirport(Airport fromAirport) {
         FromAirport = fromAirport;
     }
 
-    public String getToAirport() {
+    public Airport getToAirport() {
         return ToAirport;
     }
 
-    public void setToAirport(String toAirport) {
+    public void setToAirport(Airport toAirport) {
         ToAirport = toAirport;
     }
 }

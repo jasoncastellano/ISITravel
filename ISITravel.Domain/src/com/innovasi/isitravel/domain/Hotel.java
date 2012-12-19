@@ -1,6 +1,6 @@
 package com.innovasi.isitravel.domain;
 
-import org.pojava.datetime.DateTime;
+import org.joda.time.LocalDateTime;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,14 +9,14 @@ import org.pojava.datetime.DateTime;
  * Time: 9:57 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Hotel {
+public class Hotel implements IDomainObject{
     private String mName;
     private String mAddress;
     private String mPhone;
     private double mDailyRate;
     private double mDailyTax;
-    private DateTime mCheckInDateTime;
-    private DateTime mCheckOutDateTime;
+    private LocalDateTime mCheckInDateTime;
+    private LocalDateTime mCheckOutDateTime;
     private String mComments;
     private String mCity;
     private String mConfirmationNumber;
@@ -61,19 +61,19 @@ public class Hotel {
         mDailyTax = dailyTax;
     }
 
-    public DateTime getCheckInDateTime() {
+    public LocalDateTime getCheckInDateTime() {
         return mCheckInDateTime;
     }
 
-    public void setCheckInDateTime(DateTime checkInDateTime) {
+    public void setCheckInDateTime(LocalDateTime checkInDateTime) {
         mCheckInDateTime = checkInDateTime;
     }
 
-    public DateTime getCheckOutDateTime() {
+    public LocalDateTime getCheckOutDateTime() {
         return mCheckOutDateTime;
     }
 
-    public void setCheckOutDateTime(DateTime checkOutDateTime) {
+    public void setCheckOutDateTime(LocalDateTime checkOutDateTime) {
         mCheckOutDateTime = checkOutDateTime;
     }
 

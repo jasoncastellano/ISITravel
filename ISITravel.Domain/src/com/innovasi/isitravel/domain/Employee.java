@@ -7,7 +7,7 @@ package com.innovasi.isitravel.domain;
  * Time: 3:03 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Employee
+public class Employee implements IDomainObject
 {
     private int mEmployeeId;
     private String mFirstName;
