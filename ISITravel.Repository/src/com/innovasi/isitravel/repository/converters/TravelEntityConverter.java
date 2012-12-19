@@ -1,7 +1,7 @@
 package com.innovasi.isitravel.repository.converters;
 
-import com.innovasi.isitravel.domain.IDomainObject;
-import com.innovasi.isitravel.domain.Travel;
+import com.innovasi.isitravel.domain.*;
+import com.innovasi.isitravel.repository.contract.IEntityCollectionConverter;
 import com.innovasi.isitravel.repository.contract.IEntityConverter;
 import org.joda.time.LocalDateTime;
 import org.odata4j.core.OEntity;
@@ -11,10 +11,19 @@ import org.odata4j.core.ORelatedEntityLink;
 import java.util.List;
 
 public class TravelEntityConverter implements IEntityConverter {
-    private IEntityConverter mHotelEntityConverter = new HotelEntityConverter();
-    private IEntityConverter mFlightEntityConverter = new FlightEntityConverter();
-    private IEntityConverter mCarEntityConverter = new CarEntityConverter();
-    private IEntityConverter mEmployeeEntityConverter = new EmployeeEntityConverter();
+    private IEntityConverter mHotelEntityConverter = null;
+    private IEntityConverter mFlightEntityConverter = null;
+    private IEntityConverter mCarEntityConverter = null;
+    private IEntityConverter mEmployeeEntityConverter = null;
+    private IEntityCollectionConverter mEntityCollectionConverter = null;
+
+    public TravelEntityConverter(IEntityConverter hotelEntityConverter, IEntityConverter flightEntityConverter, IEntityConverter carEntityConverter, IEntityConverter employeeEntityConverter, IEntityCollectionConverter entityCollectionConverter) {
+        mHotelEntityConverter = hotelEntityConverter;
+        mFlightEntityConverter = flightEntityConverter;
+        mCarEntityConverter = carEntityConverter;
+        mEmployeeEntityConverter = employeeEntityConverter;
+        mEntityCollectionConverter = entityCollectionConverter;
+    }
 
     public IDomainObject ConvertEntityToDomainObject(OEntity entity) {
         Travel travel = new Travel();
@@ -31,8 +40,24 @@ public class TravelEntityConverter implements IEntityConverter {
         OEntity employee = entity.getLink("Employee", ORelatedEntityLink.class).getRelatedEntity();
 
         if(cars != null) {
-
+            List<Car> carList = mEntityCollectionConverter.ConvertEntityCollectionToDomainObjectCollection(cars, mCarEntityConverter);
+            travel.setCars(carList);
         }
+
+        if(flights != null) {
+            List<Flight> flightList = mEntityCollectionConverter.ConvertEntityCollectionToDomainObjectCollection(flights, mFlightEntityConverter);
+            travel.setFlights(flightList);
+        }
+
+        if(hotels != null) {
+           List<Hotel> hotelList = mEntityCollectionConverter.ConvertEntityCollectionToDomainObjectCollection(hotels, mHotelEntityConverter);
+            travel.setHotels(hotelList);
+        }
+
+        if(employee != null) {
+            travel.setEmployee((Employee)mEmployeeEntityConverter.ConvertEntityToDomainObject(employee));
+        }
+
         return travel;
     }
 }

@@ -22,15 +22,22 @@ public class TravelRepository implements ITravelRepository {
     public TravelRepository(IODataHelper odataHelper)
     {
         mODataHelper = odataHelper;
-        mTravelEntityConverter = new TravelEntityConverter();
+        mTravelEntityConverter = new TravelEntityConverter(new HotelEntityConverter(), new FlightEntityConverter(), new CarEntityConverter(), new EmployeeEntityConverter(), new EntityCollectionConverter());
     }
 
     public List<Travel> getAll() {
-        ODataConsumer consumer = mODataHelper.getIsiTravelConsumer();
-        List<OEntity> travels = consumer.getEntities("Travels").expand(mFullExpandPredicate).execute().toList();
         List<Travel> travelList = new ArrayList<Travel>();
-        for (OEntity travel : travels) {
-            travelList.add((Travel) mTravelEntityConverter.ConvertEntityToDomainObject(travel));
+        try {
+            ODataConsumer consumer = mODataHelper.getIsiTravelConsumer();
+            List<OEntity> travels = consumer.getEntities("Travels").expand(mFullExpandPredicate).execute().toList();
+
+            for (OEntity travel : travels) {
+                travelList.add((Travel) mTravelEntityConverter.ConvertEntityToDomainObject(travel));
+            }
+
+        }
+        catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
         return travelList;
     }

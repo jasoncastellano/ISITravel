@@ -1,27 +1,52 @@
 package com.innovasi.isitravel.repository;
 
 import com.innovasi.isitravel.domain.Hotel;
+import com.innovasi.isitravel.repository.contract.IEntityConverter;
 import com.innovasi.isitravel.repository.contract.IHotelRepository;
+import com.innovasi.isitravel.repository.contract.IODataHelper;
+import com.innovasi.isitravel.repository.converters.HotelEntityConverter;
+import org.odata4j.consumer.ODataConsumer;
+import org.odata4j.core.OEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Jason
- * Date: 11/29/12
- * Time: 4:47 AM
- * To change this template use File | Settings | File Templates.
- */
+
 public class HotelRepository implements IHotelRepository {
+    private IODataHelper mODataHelper = null;
+    private IEntityConverter mEntityConverter = null;
+
+    public HotelRepository(IODataHelper odataHelper) {
+        mODataHelper = odataHelper;
+        mEntityConverter = new HotelEntityConverter();
+    }
     public List<Hotel> getAll() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        ODataConsumer consumer = mODataHelper.getIsiTravelConsumer();
+        List<OEntity> hotels = consumer.getEntities("TravelHotels").execute().toList();
+        List<Hotel> hotelList = new ArrayList<Hotel>();
+        for (OEntity hotel : hotels) {
+            hotelList.add((Hotel) mEntityConverter.ConvertEntityToDomainObject(hotel));
+        }
+        return hotelList;
     }
 
     public List<Hotel> getByName(String name) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        ODataConsumer consumer = mODataHelper.getIsiTravelConsumer();
+        List<OEntity> hotels = consumer.getEntities("TravelHotels").filter("Name eq '" + name + "'").execute().toList();
+        List<Hotel> hotelList = new ArrayList<Hotel>();
+        for (OEntity hotel : hotels) {
+            hotelList.add((Hotel) mEntityConverter.ConvertEntityToDomainObject(hotel));
+        }
+        return hotelList;
     }
 
     public List<Hotel> getByTravelId(int travelId) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        ODataConsumer consumer = mODataHelper.getIsiTravelConsumer();
+        List<OEntity> hotels = consumer.getEntities("TravelHotels").filter("LeaveID eq " + travelId).execute().toList();
+        List<Hotel> hotelList = new ArrayList<Hotel>();
+        for (OEntity hotel : hotels) {
+            hotelList.add((Hotel) mEntityConverter.ConvertEntityToDomainObject(hotel));
+        }
+        return hotelList;
     }
 }

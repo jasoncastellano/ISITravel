@@ -1,13 +1,11 @@
 package com.innovasi.isitravel.repository.converters;
 
-import com.innovasi.isitravel.domain.Airline;
-import com.innovasi.isitravel.domain.Airport;
-import com.innovasi.isitravel.domain.Flight;
-import com.innovasi.isitravel.domain.IDomainObject;
+import com.innovasi.isitravel.domain.*;
 import com.innovasi.isitravel.repository.contract.IEntityConverter;
 import org.joda.time.LocalDateTime;
 import org.odata4j.core.OEntity;
 import org.odata4j.core.ORelatedEntityLink;
+
 
 public class FlightEntityConverter implements IEntityConverter {
     IEntityConverter mAirportEntityConverter = null;
